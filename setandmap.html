@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- <h2>JavaScript Sets</h2> -->
+    <!-- <p>Create a Set from an Array:</p>
+
+    <p id="demo"></p>
+
+    <script>
+      // Create a Set
+      const letters = new Set(["a", "b", "c"]);
+
+      // Display set.size
+      document.getElementById("demo").innerHTML = letters.size;
+    </script> -->
+
+    <!-- <p id="demo"></p>
+
+    <script>
+      // Create a Set
+      const letters = new Set();
+
+      // Add Values to the Set
+      letters.add("a");
+      letters.add("b");
+      letters.add("c");
+
+      // Display set.size
+      document.getElementById("demo").innerHTML = letters.size;
+    </script> -->
+
+    <!-- <p>Set.values() returns a Set Iterator:</p>
+
+    <p id="demo"></p>
+
+    <script>
+      // Create a Set
+      const letters = new Set(["a", "b", "c"]);
+
+      // Display set.size
+      document.getElementById("demo").innerHTML = letters.values();
+    </script> -->
+
+    <!-- <p id="demo"></p>
+
+    <script>
+      // Create a Set
+      const letters = new Set(["a", "b", "c"]);
+
+      // List all Elements
+      let text = "";
+      for (const x of letters.values()) {
+        text += x + "<br>";
+      }
+
+      document.getElementById("demo").innerHTML = text;
+    </script> -->
+
+    <!-- ------------------------------------------------------------------------------------------------------------ -->
+    Maps
+    <!-- <h2>JavaScript Map Objects</h2>
+    <p>Using Map.set():</p>
+
+    <p id="demo"></p>
+
+    <script>
+      // Create a Map
+      const fruits = new Map();
+
+      // Set Map Values
+      fruits.set("apples", 500);
+      fruits.set("bananas", 300);
+      fruits.set("oranges", 200);
+
+      //document.getElementById("demo").innerHTML = fruits.get("apples");
+      //document.getElementById("demo").innerHTML = fruits.size;
+      document.getElementById("demo").innerHTML = fruits.has("apples");
+    </script> -->
+
+    <!-- <p id="demo"></p>
+
+    <script>
+    document.getElementById("demo").innerHTML = 
+    "'Kashyap' is " + typeof "Kashyap" + "<br>" +
+    "22 is " + typeof 22 + "<br>" +
+    "NaN is " + typeof NaN + "<br>" +
+    "false is " + typeof false + "<br>" +
+    "[1, 2, 3, 4] is " + typeof [1, 2, 3, 4] + "<br>" +
+    "{name:'Kashyap', age:22} is " + typeof {name:'Kashyap', age:22} + "<br>" +
+    "new Date() is " + typeof new Date() + "<br>" +
+    "function () {} is " + typeof function () {} + "<br>" +
+    "myCar is " + typeof myCar + "<br>" +
+    "null is " + typeof null;
+    </script> -->
+
+    <!-- <h2>JavaScript Date Object</h2>
+    <p>This "home made" isDate() function returns true when used on an date:</p>
+
+    <p id="demo"></p>
+
+    <script>
+      const myDate = new Date();
+      document.getElementById("demo").innerHTML = isDate(myDate);
+
+      function isDate(myDate) {
+        return myDate.constructor === Date;
+      }
+    </script> -->
+
+    <h2>The void Operator</h2>
+
+    <p>
+      <a href="javascript:void(0);">Useless link</a>
+    </p>
+
+    <p>
+      <a href="javascript:void(document.body.style.backgroundColor='red');">
+        Click me to change the background color of body to red.</a>
+    </p>
+  </body>
+</html>
