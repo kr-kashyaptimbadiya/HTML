@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>The JavaScript <i>this</i> Keyword</h1>
+    <!-- <p>In this example, <b>this</b> refers to the <b>person</b> object.</p>
+    <p>Because <b>fullName</b> is a method of the person object.</p>
+
+    <p id="demo"></p>
+
+    <script>
+      // Create an object:
+      const person = {
+        firstName: "kashyap",
+        lastName: "Timbadiya",
+        id: 2208,
+        fullName: function () {
+          return this.firstName + " " + this.lastName;
+        },
+      };
+
+      // Display data from the object:
+      document.getElementById("demo").innerHTML = person.fullName();
+    </script> -->
+
+    //this Alone When used alone, this refers to the global object.
+    <!-- <p>In this example, <b>this</b> refers to the window object:</p>
+
+    <p id="demo"></p>
+
+    <script>
+      let x = this;
+      document.getElementById("demo").innerHTML = x;
+    </script> -->
+
+    //In a function, the global object is the default binding for this. In a browser window the global object is [object
+    Window]:
+    <!-- <p id="demo"></p>
+
+    <script>
+      document.getElementById("demo").innerHTML = myFunction();
+
+      function myFunction() {
+        return this;
+      }
+    </script> -->
+
+
+
+
+    <!-- <button onclick="this.style.display='none'">Click to Remove Me!</button> -->
+//In regular functions the this keyword represented the object that called the function, which could be the window, the document, a button or whatever.
+    <!-- <button id="btn">Click Me!</button>
+
+    <p id="demo"></p>
+
+    <script>
+        let hello = "";
+
+        hello = function () {
+            document.getElementById("demo").innerHTML += this;
+        }
+
+        //The window object calls the function:
+        window.addEventListener("load", hello);
+
+        //A button object calls the function:
+        document.getElementById("btn").addEventListener("click", hello);
+    </script> -->
+ //With arrow functions the this keyword always represents the object that defined the arrow function.   
+<!-- 
+    
+    <button id="btn">Click Me!</button>
+
+    <p id="demo"></p>
+
+    <script>
+        let hello = "";
+
+        hello = () => {
+            document.getElementById("demo").innerHTML += this;
+        }
+
+        //The window object calls the function:
+        window.addEventListener("load", hello);
+
+        //A button object calls the function:
+        document.getElementById("btn").addEventListener("click", hello);
+    </script> -->
+</body>
+
+</html>
