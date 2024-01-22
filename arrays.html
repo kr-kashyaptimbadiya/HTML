@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>JavaScript Arrays</h1>
+
+    <!-- JavaScript has a built-in array constructor new Array(). But you can safely
+    use [] instead. -->
+
+    <!-- <p>Create an Array with one element.</p>
+
+    <p id="demo"></p>
+
+    <script>
+      var points = [40];
+      document.getElementById("demo").innerHTML = points;
+    </script> -->
+
+    <!-- <p>Avoid using new Array().</p>
+
+    <p id="demo"></p>
+
+    <script>
+      var points = new Array(40);
+      document.getElementById("demo").innerHTML = points[0];
+    </script> -->
+
+    <!-- <p id="demo"></p>
+    <script>
+      const fruits = ["Banana", "Orange", "Apple"];
+      document.getElementById("demo").innerHTML = Array.isArray(fruits);
+    </script> -->
+
+    <!-- <p id="demo"></p>
+    <script>
+      var fruits = ["Banana", "Orange", "Apple"];
+      document.getElementById("demo").innerHTML = fruits instanceof Array;
+    </script> -->
+
+    <!-- <p>Copy to index 2, the elements from index 0 to 2:</p>
+
+    <p id="demo"></p>
+
+    <script>
+      const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi", "Papaya"];
+      document.getElementById("demo").innerHTML = fruits.copyWithin(2, 0, 2);
+    </script> -->
+<!-- ------------------------------------------------------------------------------------------------------------ -->
+    Searching Methods
+
+    <p id="demo"></p>
+
+    <!-- <script>
+      const numbers = [4, 9, 16, 25, 29];
+      let first = numbers.find(myFunction);
+
+      document.getElementById("demo").innerHTML =
+        "First number over 18 is " + first;
+
+      function myFunction(value, index, array) {
+        return value > 18;
+      }
+    </script> -->
+
+    <!-- <script>
+      const numbers = [4, 9, 16, 25, 29];
+
+      document.getElementById("demo").innerHTML =
+        "First number over 18 has index " + numbers.findIndex(myFunction);
+
+      function myFunction(value, index, array) {
+        return value > 18;
+      }
+    </script> -->
+
+    <!-- <script>
+      const temp = [27, 48, 30, 40, 42, 45, 30];
+      let high = temp.findLast((x) => x > 40);
+
+      document.getElementById("demo").innerHTML =
+        "The last temperature over 40 was " + high;
+    </script> -->
+<!-- ------------------------------------------------------------------------------------------------------------ -->
+    sorting Methods
+
+    
+  </body>
+</html>
