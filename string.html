@@ -29,7 +29,7 @@
       document.getElementById("demo").innerHTML =
         "Length text1 = " + text1.length + "<br>Length text2 = " + text2.length + "<br>" + text2;
     </script> -->
-<!-- ------------------------------------------------------------------------------------------------------------ -->
+    <!-- ------------------------------------------------------------------------------------------------------------ -->
     <!-- <p id="demo">Please visit Microsoft!</p>
     <button onclick="myFunction()">Try it</button> -->
 
@@ -52,7 +52,33 @@
           text.replace(/MICROSOFT/i,"W3Schools");
         }
     </script> -->
-<!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- The two methods, indexOf() and search(), are equal?
+
+    They accept the same arguments (parameters), and return the same value?
+
+    The two methods are NOT equal. These are the differences:
+
+    The search() method cannot take a second start position argument.
+    The indexOf() method cannot take powerful search values (regular expression) -->
+
+    <!-- <p>Perform a global, case-insensitive search for "ain":</p>
+
+    <p id="demo"></p>
+    //The match() method returns an array containing the results of matching a string against a string (or a regular expression).
     
-</body>
+    <script>
+      let text = "The rain in SPAIN stays mainly in the plain";
+      const myArr = text.match(/ain/gi);
+      document.getElementById("demo").innerHTML = myArr.length + " " + myArr;
+    </script> -->
+
+    <!-- <p>The endsWith() method is not supported in Internet Explorer.</p>
+    //Check if the 11 first characters of a string ends with "world":
+    <script>
+      let text = "Hello world, welcome to the universe.";
+      document.getElementById("demo").innerHTML = text.endsWith("world", 11);
+    </script>
+  </body> -->
 </html>
