@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h2>JavaScript Objects</h2>
+  <!-- <p>JavaScript objects are mutable.</p>
+    <p>
+      Any changes to a copy of an object will also change the original object:
+    </p>
+
+    <p id="demo"></p>
+
+    <script>
+      const person = {
+        firstName: "Kashyap",
+        lastName: "Timbadiya",
+        age: 21,
+        eyeColor: "brown",
+        func_age: function () {return 30;} //JSON.stringify will not stringify functions:
+        //This can be "fixed" if you convert the functions into strings before stringifying.
+      };
+      person.func_age = person.func_age.toString();
+      const x = person;
+      x.age = 22;
+      x.firstName = "mosco";
+      person.like = "BGMI";  //Add Property 
+      delete person.eyeColor; //delete property
+      const myString = JSON.stringify(person);
+      // document.getElementById("demo").innerHTML =
+      //   person.firstName + " is " + person.age + " years old and " + person.firstName + " likes " + person.like + ".";
+      document.getElementById("demo").innerHTML = myString;
+
+    </script> -->
+  <!-- 
+  <h2>JavaScript Getters and Setters</h2>
+
+  <p>Perfect for creating counters:</p>
+
+  <p id="demo"></p>
+
+  <script>
+    // Define an object
+    const obj = { counter: 0 };
+
+    // Define Setters and Getters
+    Object.defineProperty(obj, "reset", {
+      get: function () { this.counter = 0; }
+    });
+    Object.defineProperty(obj, "increment", {
+      get: function () { this.counter++; }
+    });
+    Object.defineProperty(obj, "decrement", {
+      get: function () { this.counter--; }
+    });
+    Object.defineProperty(obj, "add", {
+      set: function (value) { this.counter += value; }
+    });
+    Object.defineProperty(obj, "subtract", {
+      set: function (value) { this.counter -= value; }
+    });
+    Object.defineProperty(obj, "multiplication", {
+      set: function (value) { this.counter *= value; }
+    });
+    Object.defineProperty(obj, "divison", {
+      set: function (value) { this.counter /= value; }
+    });
+    
+
+    // Play with counter:
+    obj.reset;
+    obj.add = 4;
+    obj.subtract = 1;
+    obj.increment;
+    obj.decrement;
+    obj.multiplication = 3;
+    obj.divison = 9;
+    document.getElementById("demo").innerHTML = obj.counter;
+  </script> -->
+
+
+  <!-- <h2>JavaScript Object Constructors</h2>
+    <p id="demo"></p>
+
+    <script>
+      // Constructor function for Person objects
+      function Person(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+      }
+
+      // Create a Person object
+      const myFather = new Person("Rajesh", "Timbadiya", 43, "black");
+
+      // Display age
+      document.getElementById("demo").innerHTML =
+        "My father is " + myFather.age + ".";
+    </script> -->
+
+  <h2>JavaScript Iterables</h2>
+
+  <p id="demo"></p>
+
+  <script>
+    // Create an Object
+    myNumbers = {};
+
+    // Make it Iterable
+    myNumbers[Symbol.iterator] = function () {
+      let n = 0;
+      done = false;
+      return {
+        next() {
+          n += 10;
+          if (n == 100) { done = true }
+          return { value: n, done: done };
+        }
+      };
+    }
+
+    let text = ""
+    for (const num of myNumbers) {
+      text += num + "<br>"
+    }
+
+    document.getElementById("demo").innerHTML = text;
+  </body >
+</html >
